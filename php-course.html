@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours PHP - Créer des Sites Web Dynamiques avec PHP</title>
+    <meta name="description" content="Apprenez PHP, le langage de programmation côté serveur. Créez des sites web dynamiques, gérez des formulaires, interagissez avec des bases de données et plus encore.">
+    <meta name="keywords" content="PHP, programmation PHP, développement web dynamique, bases de données, gestion des formulaires, PHP tutoriel">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+      <div class="header-container">
+          <h1>Cours PHP - Développer des Sites Dynamiques avec PHP</h1>
+          <nav>
+              <ul>
+                  <li><a href="index.html">Retour à l'accueil</a></li>
+                  <li><a href="html-course.html">Cours HTML</a></li>
+                  <li><a href="css-course.html">Cours CSS</a></li>
+                  <li><a href="js-course.html">Cours JavaScript</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+
+  <main>
+      <h2>Introduction à PHP</h2>
+      <p>PHP (Hypertext Preprocessor) est un langage de programmation côté serveur largement utilisé pour créer des sites web dynamiques et interagir avec des bases de données. Contrairement à HTML, CSS et JavaScript qui sont exécutés sur le côté client (dans le navigateur), PHP est exécuté sur le serveur avant que la page web ne soit envoyée au client.</p>
+
+      <p>PHP est très populaire pour la création de systèmes de gestion de contenu (CMS) comme WordPress, Joomla, et Drupal. Il permet de personnaliser le contenu des pages en fonction des besoins de l'utilisateur, de gérer des formulaires et de communiquer avec des bases de données comme MySQL.</p>
+
+      <h3>Comment Installer PHP</h3>
+      <p>Avant de commencer à écrire du code PHP, vous devez disposer d'un serveur web local pour tester vos scripts. Vous pouvez installer des logiciels comme XAMPP ou WAMP qui fournissent un environnement serveur avec Apache, MySQL, et PHP préinstallés.</p>
+
+      <p>Une fois installé, vous pouvez créer des fichiers PHP dans le répertoire "htdocs" (XAMPP) ou "www" (WAMP). Vous pouvez ensuite accéder à vos scripts PHP via l'URL <code>http://localhost/monFichier.php</code> dans votre navigateur.</p>
+
+      <h3>Syntaxe de Base en PHP</h3>
+      <p>Un script PHP est inséré dans un fichier avec l'extension <code>.php</code>. Vous commencez un bloc PHP avec la balise <code>&lt;?php</code> et vous le terminez avec <code>?&gt;</code>.</p>
+
+      <h4>Exemple de code PHP simple :</h4>
+      <pre><code>
+&lt;?php
+echo "Bonjour, bienvenue dans le cours PHP !";
+?&gt;
+      </code></pre>
+
+      <p>Dans cet exemple, la fonction <code>echo</code> affiche le texte à l'écran. Chaque ligne de code PHP se termine par un point-virgule (<code>;</code>).</p>
+
+      <h3>Les Variables en PHP</h3>
+      <p>Les variables en PHP sont utilisées pour stocker des données. Une variable commence toujours par un signe dollar (<code>$</code>) suivi du nom de la variable. Les variables PHP sont dynamiques, ce qui signifie que vous pouvez stocker n'importe quel type de données (texte, nombres, tableaux, objets, etc.) dans une variable sans déclaration préalable du type de données.</p>
+
+      <h4>Exemple de variable en PHP :</h4>
+      <pre><code>
+&lt;?php
+$message = "Bonjour le monde !"; // Déclaration d'une variable
+echo $message; // Affichage de la variable
+?&gt;
+      </code></pre>
+
+      <p>Dans cet exemple, la variable <code>$message</code> contient une chaîne de texte et la fonction <code>echo</code> affiche cette valeur sur la page web.</p>
+
+      <h3>Les Types de Données en PHP</h3>
+      <p>PHP prend en charge plusieurs types de données, parmi lesquels :</p>
+      <ul>
+          <li><strong>String</strong> : Une chaîne de caractères (ex. : "Bonjour, PHP")</li>
+          <li><strong>Integer</strong> : Un entier (ex. : 42)</li>
+          <li><strong>Float</strong> : Un nombre à virgule flottante (ex. : 3.14)</li>
+          <li><strong>Boolean</strong> : Un type logique (ex. : <code>true</code> ou <code>false</code>)</li>
+          <li><strong>Array</strong> : Un tableau ou liste de valeurs</li>
+          <li><strong>Object</strong> : Une instance d'une classe (orienté objet)</li>
+          <li><strong>NULL</strong> : Une variable sans valeur définie</li>
+      </ul>
+
+      <h3>Les Conditions en PHP</h3>
+      <p>Les conditions permettent d'exécuter un code uniquement si certaines conditions sont remplies. En PHP, vous utilisez les structures conditionnelles comme <code>if</code>, <code>else</code>, et <code>elseif</code>.</p>
+
+      <h4>Exemple de condition en PHP :</h4>
+      <pre><code>
+&lt;?php
+$age = 20;
+
+if ($age >= 18) {
+  echo "Vous êtes majeur.";
+} else {
+  echo "Vous êtes mineur.";
+}
+?&gt;
+      </code></pre>
+
+      <p>Dans cet exemple, si la variable <code>$age</code> est supérieure ou égale à 18, le message "Vous êtes majeur." sera affiché. Sinon, le message "Vous êtes mineur." s'affichera.</p>
+
+      <h3>Les Boucles en PHP</h3>
+      <p>Les boucles permettent de répéter une action plusieurs fois. Les types de boucles les plus courants en PHP sont <code>while</code>, <code>for</code>, et <code>foreach</code>.</p>
+
+      <h4>Exemple de boucle <code>for</code> en PHP :</h4>
+      <pre><code>
+&lt;?php
+for ($i = 0; $i < 5; $i++) {
+  echo "Numéro " . $i . "&lt;br&gt;";
+}
+?&gt;
+      </code></pre>
+
+      <p>Dans cet exemple, la boucle <code>for</code> affichera les numéros de 0 à 4.</p>
+
+      <h3>Les Formulaires en PHP</h3>
+      <p>PHP est couramment utilisé pour traiter les données soumises via des formulaires HTML. Vous pouvez récupérer les données d'un formulaire en utilisant les superglobales <code>$_GET</code> ou <code>$_POST</code>, selon le type de méthode utilisée dans le formulaire.</p>
+
+      <h4>Exemple de traitement de formulaire en PHP :</h4>
+      <pre><code>
+&lt;form method="POST" action="traiter.php"&gt;
+Nom : &lt;input type="text" name="nom"&gt;&lt;br&gt;
+Prénom : &lt;input type="text" name="prenom"&gt;&lt;br&gt;
+&lt;input type="submit" value="Envoyer"&gt;
+&lt;/form&gt;
+
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $nom = $_POST["nom"];
+  $prenom = $_POST["prenom"];
+  echo "Bonjour, " . $prenom . " " . $nom;
+}
+?&gt;
+      </code></pre>
+
+      <p>Dans cet exemple, les données soumises par le formulaire sont récupérées avec la superglobale <code>$_POST</code> et affichées à l'utilisateur après le traitement du formulaire.</p>
+
+      <h3>Interaction avec une Base de Données MySQL en PHP</h3>
+      <p>PHP est souvent utilisé pour interagir avec des bases de données afin de stocker, récupérer et manipuler des informations. Voici un exemple de connexion à une base de données MySQL et d'exécution d'une requête SQL :</p>
+
+      <pre><code>
+&lt;?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "ma_base_de_donnees";
+
+// Connexion à la base de données
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Vérifier la connexion
+if ($conn->connect_error) {
+  die("Échec de la connexion : " . $conn->connect_error);
+}
+
+// Exécution d'une requête SQL
+$sql = "SELECT id, nom FROM utilisateurs";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+  // Afficher les résultats
+  while($row = $result->fetch_assoc()) {
+    echo "id: " . $row["id"]. " - Nom: " . $row["nom"]. "&lt;br&gt;";
+  }
+} else {
+  echo "Aucun résultat";
+}
+
+// Fermer la connexion
+$conn->close();
+?&gt;
+      </code></pre>
+
+      <h3>Conclusion du Cours PHP</h3>
+      <p>PHP est un langage puissant pour le développement de sites web dynamiques, l'interaction avec des bases de données et la gestion des formulaires. En maîtrisant PHP, vous pourrez créer des applications web plus complexes et interactives.</p>
+  </main>
+
+  <footer>
+      <p>&copy; 2025 Cours PHP. Tous droits réservés.</p>
+  </footer>
+</body>
+
+</html>

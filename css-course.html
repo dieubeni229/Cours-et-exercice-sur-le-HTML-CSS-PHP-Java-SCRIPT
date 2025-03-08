@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours CSS - Styliser et Concevoir des Pages Web</title>
+    <meta name="description" content="Apprenez à styliser vos pages web en utilisant CSS, à comprendre la mise en page, et à rendre vos pages visuellement attractives et responsives.">
+    <meta name="keywords" content="CSS, mise en page, styles, conception de pages web, tutoriel CSS, apprendre CSS, développement web, responsive design">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Cours CSS - Concevoir et Styliser des Pages Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Retour à l'accueil</a></li>
+                    <li><a href="html-course.html">Cours HTML</a></li>
+                    <li><a href="js-course.html">Cours JavaScript</a></li>
+                    <li><a href="php-course.html">Cours PHP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Introduction au CSS</h2>
+        <p>Le CSS, ou Cascading Style Sheets (feuilles de style en cascade), est un langage de style qui permet de définir l'apparence des éléments HTML d'une page web. Tandis que HTML se concentre sur la structure du contenu, CSS se charge de l'aspect visuel. Le CSS est essentiel pour rendre les sites web attrayants, organisés et fonctionnels.</p>
+
+        <h3>Les Bases du CSS</h3>
+        <p>Le CSS fonctionne en ciblant les éléments HTML grâce à des sélecteurs, puis en leur appliquant des propriétés pour modifier leur apparence. Voici un exemple simple d'application de styles CSS :</p>
+
+        <pre><code>
+/* Sélecteur de balise HTML */
+h1 {
+  color: blue; /* Change la couleur du texte */
+  font-size: 36px; /* Définit la taille de la police */
+}
+
+p {
+  line-height: 1.5; /* Modifie l'espacement des lignes */
+  font-family: Arial, sans-serif; /* Définit la police */
+}
+        </code></pre>
+
+        <h3>Les Sélecteurs CSS</h3>
+        <p>Les sélecteurs CSS sont utilisés pour cibler les éléments HTML à styliser. Voici les types les plus courants de sélecteurs :</p>
+        <ul>
+            <li><strong>Sélecteur de balise</strong> : Applique le style à tous les éléments d'une même balise. Exemple : <code>h1 { ... }</code></li>
+            <li><strong>Sélecteur de classe</strong> : Applique le style aux éléments ayant une classe spécifique. Exemple : <code>.maClasse { ... }</code></li>
+            <li><strong>Sélecteur d'identifiant</strong> : Applique le style à un élément unique avec un identifiant. Exemple : <code>#monId { ... }</code></li>
+            <li><strong>Sélecteur combiné</strong> : Cible des éléments qui sont dans une relation avec d'autres éléments. Exemple : <code>div p { ... }</code></li>
+        </ul>
+
+        <h3>La Mise en Page avec CSS</h3>
+        <p>Le CSS permet également de contrôler la mise en page de vos éléments HTML. Vous pouvez définir la taille, la position et l'agencement des éléments. Voici les propriétés de mise en page les plus utilisées :</p>
+        <ul>
+            <li><strong>Display</strong> : Contrôle le type de rendu d'un élément. Exemple : <code>display: block;</code></li>
+            <li><strong>Position</strong> : Définit la position d'un élément dans la page. Exemple : <code>position: relative;</code></li>
+            <li><strong>Float</strong> : Permet de faire "flotter" des éléments à gauche ou à droite. Exemple : <code>float: left;</code></li>
+            <li><strong>Flexbox</strong> : Permet de créer des mises en page flexibles et réactives. Exemple : <code>display: flex;</code></li>
+        </ul>
+
+        <h3>Exemple de Mise en Page avec Flexbox</h3>
+        <p>Flexbox est une méthode moderne et puissante pour gérer la mise en page. Voici un exemple simple de disposition de trois éléments :</p>
+
+        <pre><code>
+.container {
+  display: flex; /* Active le modèle Flexbox */
+  justify-content: space-between; /* Espacement entre les éléments */
+}
+
+.item {
+  width: 30%; /* Chaque élément occupe 30% de la largeur de son conteneur */
+}
+        </code></pre>
+
+        <h3>Responsivité avec CSS</h3>
+        <p>Le design réactif est une approche qui permet à votre site web de s'adapter aux différentes tailles d'écran. Vous pouvez utiliser les media queries pour appliquer des styles spécifiques à différents types d'écrans (ordinateurs, tablettes, smartphones).</p>
+
+        <pre><code>
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Colonne sur les petits écrans */
+  }
+}
+        </code></pre>
+
+        <h3>Conclusion du Cours CSS</h3>
+        <p>Le CSS est l'un des éléments essentiels pour rendre vos pages web attrayantes et bien structurées. En maîtrisant le CSS, vous serez en mesure de créer des sites web professionnels et adaptés à tous les types de périphériques. Vous avez maintenant les bases nécessaires pour commencer à styliser vos pages web.</p>
+
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dieu-Béni DEDEDJI - Cours de Programmation - CSS</p>
+    </footer>
+</body>
+
+</html>

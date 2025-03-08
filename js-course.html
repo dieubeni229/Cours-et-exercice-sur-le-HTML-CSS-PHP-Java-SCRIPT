@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours JavaScript - Ajouter des Fonctionnalités Dynamiques à votre Site</title>
+    <meta name="description"
+        content="Apprenez JavaScript, le langage de programmation côté client. Créez des interactions dynamiques, gérez les événements, et manipulez le DOM pour des pages web interactives.">
+    <meta name="keywords"
+        content="JavaScript, tutoriel JavaScript, manipulation DOM, événements, programmation JavaScript, développement web interactif">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Cours JavaScript - Dynamiser vos Pages Web</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Retour à l'accueil</a></li>
+                    <li><a href="html-course.html">Cours HTML</a></li>
+                    <li><a href="css-course.html">Cours CSS</a></li>
+                    <li><a href="php-course.html">Cours PHP</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2>Introduction à JavaScript</h2>
+        <p>JavaScript est un langage de programmation puissant utilisé pour créer des pages web interactives. Il permet
+            de manipuler des éléments HTML et CSS à la volée, de gérer des événements utilisateur, et de créer des
+            animations et des effets dynamiques. En tant que langage côté client, JavaScript s'exécute directement dans
+            le navigateur de l'utilisateur.</p>
+
+        <h3>Les Bases du JavaScript</h3>
+        <p>Voici un exemple basique de JavaScript pour afficher une alerte :</p>
+
+        <pre><code>
+alert("Bienvenue sur mon site !"); 
+        </code></pre>
+
+        <h3>Manipuler le DOM avec JavaScript</h3>
+        <p>Le DOM (Document Object Model) est l'interface qui permet à JavaScript de manipuler les éléments HTML. Voici
+            un exemple où nous modifions le contenu d'un élément HTML :</p>
+
+        <pre><code>
+document.getElementById("monTitre").innerHTML = "Titre modifié !";
+        </code></pre>
+
+        <h3>Les Événements JavaScript</h3>
+        <p>Les événements en JavaScript vous permettent de réagir aux actions de l'utilisateur, comme un clic, une
+            soumission de formulaire, ou une saisie dans un champ de texte. Voici un exemple d'ajout d'un événement de
+            clic :</p>
+
+        <pre><code>
+document.getElementById("monBouton").addEventListener("click", function() {
+  alert("Bouton cliqué !");
+});
+        </code></pre>
+
+        <h3>Les Fonctions et Variables en JavaScript</h3>
+        <p>JavaScript vous permet de définir des fonctions pour structurer votre code et éviter la répétition. Voici un
+            exemple de fonction qui additionne deux nombres :</p>
+
+        <pre><code>
+function additionner(a, b) {
+  return a + b;
+}
+console.log(additionner(5, 3)); // Affiche 8
+        </code></pre>
+
+        <h3>Conclusion du Cours JavaScript</h3>
+        <p>JavaScript est essentiel pour dynamiser vos sites web et rendre vos pages interactives. Il vous permet
+            d'ajouter des fonctionnalités complexes à vos projets web, en manipulant le DOM, en écoutant les événements
+            et en interagissant avec des données externes via des promesses et des API.</p>
+
+        <p><a href="index.html">Retour à l'accueil</a></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Dieu-Béni DEDEDJI - Cours de Programmation - JavaScript</p>
+    </footer>
+</body>
+
+</html>
